@@ -18,7 +18,7 @@ user_name: ENV['GMAIL_USERNAME'],
 password: ENV['GMAIL_PASSWORD']
 }
 
-Rails.application.routes.default_url_options[:host] = 'https://young-sea-55118.herokuapp.com'
+Rails.application.routes.default_url_options[:host] = 'https://morning-dawn-84586.herokuapp.com'
 
 config.serve_static_assets = true
 
