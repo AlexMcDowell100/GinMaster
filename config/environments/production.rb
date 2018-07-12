@@ -16,8 +16,6 @@ authentication: 'plain',
 enable_starttls_auto: true,
 user_name: ENV['GMAIL_USERNAME'],
 password: ENV['GMAIL_PASSWORD']
-tls: false,
-enable_starttls_auto: false,
 }
 
 Rails.application.routes.default_url_options[:host] = 'https://morning-dawn-84586.herokuapp.com/'
