@@ -1,0 +1,614 @@
+/* line 7, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.new_menu {
+  position: fixed;
+  background-color: white;
+  color: black;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -o-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+/* line 27, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.new_menu-active {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 35, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+#menu_close {
+  margin: 5px;
+}
+
+/* line 41, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+body {
+  font-family: 'Istok Web', sans-serif;
+  font-weight: lighter;
+  color: #ff0000;
+  background-color: black;
+}
+
+/* line 48, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+#welcome {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px;
+}
+
+/* line 55, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+#welcome p {
+  color: black;
+}
+
+/* line 59, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+}
+
+/* line 65, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.header_container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 70% 1fr;
+  grid-template-rows: 1fr 500px 1fr;
+}
+
+/* line 72, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+#header {
+  background-image: url(/assets/GinBackground-070f96ab7185f6a95f0fa1a38270ab91fc48cdbcafff95d081c23323032c0ed4.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+/* line 81, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+#logo {
+  width: 100%;
+  display: block;
+  vertical-align: middle;
+  margin: auto;
+}
+
+/* line 88, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.spacer {
+  grid-column: span 3;
+}
+
+@media (min-width: 768px) {
+  /* line 93, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+  .container {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 1fr auto 1fr;
+  }
+}
+/* line 101, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+#video1 {
+  grid-column: span 3;
+  padding: 30px;
+  text-align: center;
+  font-size: 1.4em;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+/* line 111, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+#video3 {
+  flex: 1;
+  padding: 20px;
+  border: 2px solid white;
+}
+
+/* line 117, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+#video4 {
+  padding: 20px;
+  background-color: black;
+  border: 2px solid white;
+}
+
+/* line 123, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+#video5 {
+  grid-column: span 3;
+  padding: 30px;
+  text-align: center;
+  font-size: 1.4em;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+/* line 133, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+h1 {
+  margin-bottom: 1em;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+/* line 139, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.vid-container {
+  height: 100vh;
+  width: 0;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 5;
+  display: none;
+}
+
+/* line 150, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.grid-video {
+  width: 100%;
+  position: fixed;
+  z-index: 8;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+/* line 159, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.grid-video--hide {
+  opacity: 0;
+}
+
+/* line 164, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.box {
+  width: 0;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  overflow: auto;
+}
+
+/* line 178, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.menu_box {
+  width: 0;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  overflow: auto;
+}
+
+/* line 192, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+#video2 {
+  z-index: 0;
+  background-color: #000000;
+  padding: 20px;
+  border: 2px solid white;
+}
+
+/* line 200, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+#menu {
+  color: white;
+}
+
+/* Safari 4.0 - 8.0 */
+/* line 205, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.transform {
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+/* line 213, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.transform-active {
+  width: 100vw;
+}
+
+/* line 217, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.m_transform {
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+/* line 225, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.m_transform-active {
+  width: 100vw;
+}
+
+/* line 229, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.hide {
+  opacity: 0;
+}
+
+/* line 234, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.hidden {
+  right: 0;
+  opacity: 0;
+  width: 40px;
+}
+
+/* line 241, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.not-hidden {
+  animation: fadeinbutton 4s;
+  animation-delay: 2s;
+  -moz-animation: fadeinbutton 4s;
+  /* Firefox */
+  animation-delay: 2s;
+  -webkit-animation: fadeinbutton 4s;
+  /* Safari and Chrome */
+  animation-delay: 2s;
+  -o-animation: fadeinbutton 4s;
+  /* Opera */
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeinbutton {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeinbutton {
+  /* Firefox */
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeinbutton {
+  /* Safari and Chrome */
+  0% {
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeinbutton {
+  /* Opera */
+  0% {
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 307, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+#close {
+  top: 0;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 40px;
+  float: right;
+  z-index: 12;
+  position: fixed;
+}
+
+/* line 317, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+#load {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9999;
+  background: url("https://www.creditmutuel.fr/cmne/fr/banques/webservices/nswr/images/loading.gif") no-repeat center center rgba(0, 0, 0, 0.25);
+}
+
+/* line 325, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+#text {
+  transition: all 500ms ease;
+  position: relative;
+  padding: 10px;
+}
+
+/* line 331, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+#text:hover {
+  animation: bounce 1s;
+}
+
+@keyframes bounce {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-7px);
+    transform: translateY(-7 px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+/* line 354, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+a {
+  text-decoration-line: none;
+  color: white;
+}
+
+/* line 359, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+body {
+  color: red;
+}
+
+/* line 363, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+#container_nav {
+  height: 40px;
+  display: grid;
+  grid-template-columns: 1fr 70% 1fr;
+  grid-template-rows: 1fr;
+}
+
+/* line 372, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 385, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.modal-content {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+/* line 396, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.modal-header h2, .modal-footer h3 {
+  margin: 0;
+}
+
+/* line 400, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.modal-header {
+  background: white;
+  padding: 15px;
+  color: black;
+  padding-top: 0;
+}
+
+/* line 407, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.modal-body p {
+  margin-bottom: 10px;
+  color: #6f6f6e;
+}
+
+/* line 412, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+#noentry {
+  display: none;
+}
+
+/* line 416, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+#acceptBtn {
+  font-weight: bold;
+}
+
+/* line 421, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+#acceptBtn:hover {
+  color: white !important;
+}
+
+/* line 426, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+#boldfont {
+  margin: 0;
+  font-family: "Knockout 68 A", "Knockout 68 B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 50px;
+}
+
+/* line 432, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.modal-body {
+  padding: 10px 90px;
+  top: -20px;
+}
+
+/* line 437, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.closeBtn {
+  display: block;
+  width: 22px;
+  padding-top: 30px;
+  width: 22px;
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+  background-size: 90%;
+  margin-right: 16px;
+}
+
+/* line 450, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.closeBtn:hover {
+  width: 24px;
+  margin-right: 15px;
+  padding-top: 29px;
+}
+
+/* line 456, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.closeBtn:hover, .closeBtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 462, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+#acceptBtn:hover, #acceptBtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 469, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+#acceptBtn {
+  display: block;
+  align-content: center;
+  margin: auto;
+  text-align: center;
+  width: 140px;
+  border-style: solid;
+  height: 48px;
+  padding-top: 11px;
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
+
+/* line 485, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+#cookieMonster {
+  float: left;
+  display: block;
+  margin: auto;
+  width: 400px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+
+/* line 495, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+#script_size {
+  font-size: 90px;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* line 509, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.modal-body span {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 515, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+  .modal-content {
+    width: 260px;
+  }
+
+  /* line 519, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+  #cookieMonster {
+    padding-top: 10px;
+    width: 200px;
+    padding-bottom: 10px;
+  }
+
+  /* line 525, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+  .closeBtn {
+    width: 20px;
+  }
+
+  /* line 527, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+  #boldfont {
+    font-size: 40px;
+  }
+
+  /* line 531, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+  #script_size {
+    font-size: 60px;
+  }
+
+  /* line 535, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+  .modal-body {
+    padding: 10px 5px;
+  }
+
+  /* line 539, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+  #acceptBtn {
+    margin-top: 10px;
+    margin: auto;
+  }
+
+  /* line 543, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+  .modal-body {
+    padding-bottom: 0;
+  }
+
+  /* line 550, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+  div#acceptBtn.btn.dark {
+    margin-top: 30px;
+  }
+
+  /* line 555, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+  .modal-body p {
+    margin-bottom: 0;
+  }
+
+  /* line 560, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+  .modal-content {
+    margin: 5% auto;
+  }
+}
+/* line 568, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+body {
+  background-color: black;
+}
+
+/* line 574, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.new_menu {
+  position: fixed;
+  background-color: white;
+  color: black;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -o-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+/* line 594, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+.new_menu-active {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 602, /Users/alexmcdowell/back_up3/TEST3/blog/app/assets/stylesheets/application.css.scss */
+#menu_close {
+  margin: 5px;
+}
