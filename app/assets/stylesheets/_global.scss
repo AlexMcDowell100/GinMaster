@@ -13,6 +13,9 @@
  *= require_tree .
  *= require_self
  */
+ $font-stack:'Istok Web', sans-serif;
+ $primary-color: #ff0000;
+
 a{
     text-decoration-line: none;
     color: white;
@@ -41,7 +44,7 @@ grid-template-rows:1fr;
   width:100%;
   overflow: auto;
   background-color: rgba(0,0,0,0.5);
-  
+
 }
 
 .modal-content{
@@ -67,12 +70,12 @@ grid-template-rows:1fr;
 }
 
 .modal-body p{
-  	margin-bottom:10px;
+    margin-bottom:10px;
     color: #6f6f6e;
 }
 
 #noentry{
-	display:none;
+  display:none;
 }
 
 #acceptBtn{
@@ -104,7 +107,7 @@ grid-template-rows:1fr;
     color: #ccc;
     float: right;
     font-size: 30px;
-    
+
     background-size: 90%;
     margin-right: 16px;
 }
@@ -126,10 +129,10 @@ grid-template-rows:1fr;
   text-decoration: none;
   cursor:pointer;
 }
-    
-    
+
+
 #acceptBtn{
-   
+
     display: block;
     align-content: center;
     margin: auto;
@@ -141,8 +144,8 @@ grid-template-rows:1fr;
     margin-top: 45px;
     margin-bottom: 15px;
 
-    
-    
+
+
 }
 #cookieMonster {
     float: left;
@@ -151,12 +154,12 @@ grid-template-rows:1fr;
     width: 400px;
     padding-bottom: 20px;
     padding-top: 30px;
- 
+
 }
 
 #script_size{
-font-size:90px;    
-    
+font-size:90px;
+
 }
 
 @keyframes modalopen{
@@ -165,7 +168,7 @@ font-size:90px;
 }
 
 p div .modal-body{
-        
+
 }
 
 .modal-body span{
@@ -177,52 +180,52 @@ p div .modal-body{
     .modal-content{
             width: 260px;
     }
-    
+
     #cookieMonster{
         padding-top:10px;
           width: 200px;
             padding-bottom: 10px;
     }
-    
+
     .closeBtn {
         width:20px;}
     #boldfont {
         font-size:40px;
     }
-    
+
     #script_size {
     font-size: 60px;
 }
-    
+
     .modal-body {
     padding: 10px 5px;
 }
-    
+
     #acceptBtn{
           margin-top:10px;
         margin:auto;
 }
     .modal-body{
-      
+
         padding-bottom:0;
-        
-        
+
+
     }
-    
+
     div#acceptBtn.btn.dark{
         margin-top: 30px;
     }
-    
-    
+
+
     .modal-body p{
-       
+
     margin-bottom:0;
     }
-    
+
     .modal-content{
         margin:5% auto;
     }
-        
+
 }
 
 

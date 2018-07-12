@@ -1,0 +1,601 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+/* line 16, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+a {
+  text-decoration-line: none;
+  color: white;
+}
+
+/* line 21, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+body {
+  color: white;
+}
+
+/* line 25, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+#container_nav {
+  height: 40px;
+  display: grid;
+  grid-template-columns: 1fr 70% 1fr;
+  grid-template-rows: 1fr;
+}
+
+/* line 34, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 47, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+.modal-content {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+/* line 58, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+.modal-header h2, .modal-footer h3 {
+  margin: 0;
+}
+
+/* line 62, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+.modal-header {
+  background: white;
+  padding: 15px;
+  color: black;
+  padding-top: 0;
+}
+
+/* line 69, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+.modal-body p {
+  margin-bottom: 10px;
+  color: #6f6f6e;
+}
+
+/* line 74, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+#noentry {
+  display: none;
+}
+
+/* line 78, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+#acceptBtn {
+  font-weight: bold;
+}
+
+/* line 83, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+#acceptBtn:hover {
+  color: white !important;
+}
+
+/* line 88, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+#boldfont {
+  margin: 0;
+  font-family: "Knockout 68 A", "Knockout 68 B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 50px;
+}
+
+/* line 94, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+.modal-body {
+  padding: 10px 90px;
+  top: -20px;
+}
+
+/* line 99, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+.closeBtn {
+  display: block;
+  width: 22px;
+  padding-top: 30px;
+  width: 22px;
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+  background-size: 90%;
+  margin-right: 16px;
+}
+
+/* line 112, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+.closeBtn:hover {
+  width: 24px;
+  margin-right: 15px;
+  padding-top: 29px;
+}
+
+/* line 118, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+.closeBtn:hover, .closeBtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 124, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+#acceptBtn:hover, #acceptBtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 131, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+#acceptBtn {
+  display: block;
+  align-content: center;
+  margin: auto;
+  text-align: center;
+  width: 140px;
+  border-style: solid;
+  height: 48px;
+  padding-top: 11px;
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
+
+/* line 147, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+#cookieMonster {
+  float: left;
+  display: block;
+  margin: auto;
+  width: 400px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+
+/* line 157, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+#script_size {
+  font-size: 90px;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* line 171, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+.modal-body span {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 177, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+  .modal-content {
+    width: 260px;
+  }
+
+  /* line 181, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+  #cookieMonster {
+    padding-top: 10px;
+    width: 200px;
+    padding-bottom: 10px;
+  }
+
+  /* line 187, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+  .closeBtn {
+    width: 20px;
+  }
+
+  /* line 189, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+  #boldfont {
+    font-size: 40px;
+  }
+
+  /* line 193, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+  #script_size {
+    font-size: 60px;
+  }
+
+  /* line 197, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+  .modal-body {
+    padding: 10px 5px;
+  }
+
+  /* line 201, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+  #acceptBtn {
+    margin-top: 10px;
+    margin: auto;
+  }
+
+  /* line 205, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+  .modal-body {
+    padding-bottom: 0;
+  }
+
+  /* line 212, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+  div#acceptBtn.btn.dark {
+    margin-top: 30px;
+  }
+
+  /* line 217, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+  .modal-body p {
+    margin-bottom: 0;
+  }
+
+  /* line 222, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+  .modal-content {
+    margin: 5% auto;
+  }
+}
+/* line 230, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_global.scss */
+body {
+  background-color: black;
+}
+
+/* line 1, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+body {
+  font-family: 'Istok Web', sans-serif;
+  font-weight: lighter;
+  color: #ff0000;
+  background-color: black;
+}
+
+/* line 8, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+#welcome {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px;
+}
+
+/* line 15, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+#welcome p {
+  color: black;
+}
+
+/* line 19, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+}
+
+/* line 25, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+.header_container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 70% 1fr;
+  grid-template-rows: 1fr 500px 1fr;
+}
+
+/* line 32, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+#header {
+  background-image: url(/assets/GinBackground-070f96ab7185f6a95f0fa1a38270ab91fc48cdbcafff95d081c23323032c0ed4.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+/* line 41, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+#logo {
+  width: 100%;
+  display: block;
+  vertical-align: middle;
+  margin: auto;
+}
+
+/* line 48, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+.spacer {
+  grid-column: span 3;
+}
+
+@media (min-width: 768px) {
+  /* line 53, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+  .container {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 1fr auto 1fr;
+  }
+}
+/* line 61, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+#video1 {
+  grid-column: span 3;
+  padding: 30px;
+  text-align: center;
+  font-size: 1.4em;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+/* line 71, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+#video3 {
+  flex: 1;
+  padding: 20px;
+  border: 2px solid white;
+}
+
+/* line 77, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+#video4 {
+  padding: 20px;
+  background-color: black;
+  border: 2px solid white;
+}
+
+/* line 83, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+#video5 {
+  grid-column: span 3;
+  padding: 30px;
+  text-align: center;
+  font-size: 1.4em;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+/* line 93, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+h1 {
+  margin-bottom: 1em;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+/* line 99, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+.vid-container {
+  height: 100vh;
+  width: 0;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 5;
+  display: none;
+}
+
+/* line 110, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+.grid-video {
+  width: 100%;
+  position: fixed;
+  z-index: 8;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+/* line 119, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+.grid-video--hide {
+  opacity: 0;
+}
+
+/* line 124, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+.box {
+  width: 0;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  overflow: auto;
+}
+
+/* line 138, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+.menu_box {
+  width: 0;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  overflow: auto;
+}
+
+/* line 152, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+#video2 {
+  z-index: 0;
+  background-color: #000000;
+  padding: 20px;
+  border: 2px solid white;
+}
+
+/* line 160, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+#menu {
+  color: white;
+}
+
+/* Safari 4.0 - 8.0 */
+/* line 165, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+.transform {
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+/* line 173, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+.transform-active {
+  width: 100vw;
+}
+
+/* line 177, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+.m_transform {
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+/* line 185, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+.m_transform-active {
+  width: 100vw;
+}
+
+/* line 189, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+.hide {
+  opacity: 0;
+}
+
+/* line 194, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+.hidden {
+  right: 0;
+  opacity: 0;
+  width: 40px;
+}
+
+/* line 201, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+.not-hidden {
+  animation: fadeinbutton 4s;
+  animation-delay: 2s;
+  -moz-animation: fadeinbutton 4s;
+  /* Firefox */
+  animation-delay: 2s;
+  -webkit-animation: fadeinbutton 4s;
+  /* Safari and Chrome */
+  animation-delay: 2s;
+  -o-animation: fadeinbutton 4s;
+  /* Opera */
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeinbutton {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeinbutton {
+  /* Firefox */
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeinbutton {
+  /* Safari and Chrome */
+  0% {
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeinbutton {
+  /* Opera */
+  0% {
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 267, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+#close {
+  top: 0;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 40px;
+  float: right;
+  z-index: 12;
+  position: fixed;
+}
+
+/* line 277, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+#load {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9999;
+  background: url("https://www.creditmutuel.fr/cmne/fr/banques/webservices/nswr/images/loading.gif") no-repeat center center rgba(0, 0, 0, 0.25);
+}
+
+/* line 285, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+#text {
+  transition: all 500ms ease;
+  position: relative;
+  padding: 10px;
+}
+
+/* line 291, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/_ginlovers.css.scss */
+#text:hover {
+  animation: bounce 1s;
+}
+
+@keyframes bounce {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-7px);
+    transform: translateY(-7 px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+/* line 7, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/modules/posts.scss */
+body {
+  font: 100% "Istok Web", sans-serif;
+  color: #ff0000;
+}
+
+/* line 5, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/application.scss */
+.new_menu {
+  position: fixed;
+  background-color: white;
+  color: black;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -o-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+/* line 25, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/application.scss */
+.new_menu-active {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 33, /Users/alexmcdowell/TEST3/blog/app/assets/stylesheets/application.scss */
+#menu_close {
+  margin: 5px;
+}
