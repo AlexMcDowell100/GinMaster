@@ -1,7 +1,7 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
-config.action_mailer.default_url_options = { :host => 'https://morning-dawn-84586.herokuapp.com/' }
+config.action_mailer.default_url_options = { :host => 'https://morning-dawn-84586.herokuapp.com' }
 
 config.action_mailer.delivery_method = :smtp
 config.action_mailer.perform_deliveries = true
@@ -18,7 +18,7 @@ user_name: ENV['GMAIL_USERNAME'],
 password: ENV['GMAIL_PASSWORD']
 }
 
-Rails.application.routes.default_url_options[:host] = 'https://morning-dawn-84586.herokuapp.com/'
+Rails.application.routes.default_url_options[:host] = 'https://morning-dawn-84586.herokuapp.com'
 
 config.serve_static_assets = true
 
