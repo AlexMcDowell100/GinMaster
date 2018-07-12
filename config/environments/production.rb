@@ -5,7 +5,7 @@ config.action_mailer.default_url_options = { :host => 'https://morning-dawn-8458
 
 config.action_mailer.delivery_method = :smtp
 config.action_mailer.perform_deliveries = true
-config.action_mailer.raise_delivery_errors = false
+config.action_mailer.raise_delivery_errors = true
 config.action_mailer.default :charset => "utf-8"
 
 config.action_mailer.smtp_settings = {
@@ -16,6 +16,8 @@ authentication: 'plain',
 enable_starttls_auto: true,
 user_name: ENV['GMAIL_USERNAME'],
 password: ENV['GMAIL_PASSWORD']
+tls: false,
+enable_starttls_auto: false,
 }
 
 Rails.application.routes.default_url_options[:host] = 'https://morning-dawn-84586.herokuapp.com/'
