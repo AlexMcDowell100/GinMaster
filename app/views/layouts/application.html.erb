@@ -4,46 +4,69 @@
     <title>Blog</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
+
   </head>
-
   <body>
-<div class="new_menu">
-<div id="menu_close">Menu</div>
 
 
 
-</div>
 
-<div id="simpleModal" class="modal">
-<div class="modal-content">
-<div class="modal-header"><div id='noentry'>
-      <p> you are not old enough</p>
-    </div></div>
-
-    <div id="modal-body">
-
-      <form>
-      Date Of Birth <input type="text" id="DOB" /></br>
-      </form>
-      <div id="acceptBtn" class="btn dark">Submit</div>
-      </div>
-      </div>
-
+    <div id="simpleModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div id='noentry'>
+            <p>
+              you are not old enough
+            </p>
+          </div>
         </div>
+        <div id="modal-body">
+          <form>Date Of Birth<input type="text" id="DOB"/></br>
+          </form>
+          <div id="acceptBtn" class="btn dark">
+          Submit
+          </div>
+        </div>
+
+
+      </div>
     </div>
 
-    <div id='container_nav'>
-      <div id='menu'>Menu</div>
+  <div id='container_nav'>
+      <div class="lines"><div class="line"></div><div class="line"></div></div>
+      <div id='menu'><h1>Menu</h1></div>
+      <div></div>
       <div>
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+        <% if user_signed_in? %>
+          <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+        <% else %>
+          <%= link_to "Sign up", new_user_registration_path %>
+          <%= link_to('Login', new_user_session_path) %>
+        <% end %>
 
+    </div>
+  </div>
+    <div class="new_menu">
+
+          <!-- <div id='container_menu'>
+            <div class="lines"><div class="line"></div><div class="line"></div></div>
+            <div><h1>Menu</h1></div>
+        </div> -->
+        <%= link_to "Forum", posts_path %>
+        <%= link_to "HOME", root_path %>
+        </div>
+    <!-- <div id='container_nav'>
+      <div id="menu">
+        <h1> Menu </h1>
       </div>
-
       <div>
-
+      </div>
+      <div>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <% if user_signed_in? %>
@@ -53,10 +76,8 @@
   <%= link_to('Login', new_user_session_path)  %>
 <% end %>
 </div>
+</div> -->
 
-</div>
-
-
-    <%= yield %>
-  </body>
+  <%= yield %>
+</body>
 </html>

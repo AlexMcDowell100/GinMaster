@@ -1,5 +1,11 @@
-$font-stack:'Istok Web', sans-serif;
-$primary-color: #ff0000;
+h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 1em;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 6px;
+  color:black;
+}
 
 body {
   font-family: 'Istok Web', sans-serif;
@@ -52,6 +58,18 @@ body {
   grid-column: span 3;
 }
 
+.intro_container {
+  height:200px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.intro_container div:nth-child(1){
+  padding:20px;
+}
+
+
+
 @media (min-width: 768px) {
   .container {
     display: grid;
@@ -61,15 +79,6 @@ body {
   }
 }
 
-#video1 {
-  grid-column: span 3;
-  padding: 30px;
-  text-align: center;
-  font-size: 1.4em;
-  background-color: black;
-  color: white;
-  border: 2px solid white;
-}
 
 #video3 {
   flex: 1;
@@ -309,4 +318,83 @@ h1 {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+
+.line-1{
+    position: relative;
+    top: 50%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+
+#demoWrapper {
+    width: 600px;
+    height: 350px;
+    -webkit-font-smoothing: antialiased;
+    color: black;
+    overflow: hidden;
+}
+#bg {
+    position: absolute;
+    background-image: url(https://www.greensock.com/_img/codepen/black_textured_background.png);
+    width: 600px;
+    height: 350px;
+}
+#content {
+    padding-left: 15px;
+    visibility: hidden;
+}
+#info {
+    margin-top: 20px;
+}
+#feature {
+    position: relative;
+    float: left;
+}
+#description {
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    width: 290px;
+    font-size: 16px;
+    line-height: 24px;
+}
+#nav {
+    position: absolute;
+    top: 285px;
+    left: 140px;
+    white-space: nowrap;
+}
+#nav img {
+    position: relative;
+    margin-right: 20px;
+    float: left;
 }

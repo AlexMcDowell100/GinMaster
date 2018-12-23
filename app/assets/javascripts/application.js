@@ -12,29 +12,26 @@
 //
 //= require rails-ujs
 //= require activestorage
-//= require turbolinks
+
 //= require jquery
 //= require jquery_ujs
 
 //= require_tree
 
+//= require 'greensock/jquery.gsap.js'
 
-$("#menu").click(function() {
-  $('.new_menu').toggleClass('new_menu-active');
-});
 
-$(document).ready(function() {
 
-$("#menu_close").click(function() {
-  $('.new_menu').removeClass('new_menu-active');
-});
-});
 
 window.onload=function(){
 
     getCookie();
     doSomething();
+
+
 }
+
+
 
 function getCookie(name) {
     var dc = document.cookie;
@@ -178,3 +175,18 @@ else{
 function gaOptout() {
     console.log('youve opted out');
 }
+
+
+
+// document.onreadystatechange = function() {
+//   var state = document.readyState
+//   if (state == 'interactive') {
+//     document.getElementById('contents').style.visibility = "hidden";
+//   } else if (state == 'complete') {
+//     setTimeout(function() {
+//       document.getElementById('interactive');
+//       document.getElementById('load').style.visibility = "hidden";
+//       document.getElementById('contents').style.visibility = "visible";
+//     }, 1000);
+//   }
+// }

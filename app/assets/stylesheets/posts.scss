@@ -2,10 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$font-stack:'Istok Web', sans-serif;
-$primary-color: #ff0000;
+
 
 body {
-  font: 100% $font-stack;
-  color: $primary-color;
+  background-color: #000000;
+  color: #ffffff;
 }
+
+h1{color:black;}
+
+a{color:black;}
+
+h2{color:#000000}

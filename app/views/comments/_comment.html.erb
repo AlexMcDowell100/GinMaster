@@ -1,0 +1,14 @@
+<div class="comment clearfix">
+  <div class="comment_content">
+    <div><%= @post.user.email %></div>
+    <p class="comment_body"><%= comment.body %></p>
+    <p class="comment_time"><%= time_ago_in_words(comment.created_at) %> Ago</p>
+
+  </div>
+
+
+  <% if @post.user == current_user %>
+  <%= link_to 'edit', edit_post_path(post) %>
+  <%= link_to 'destroy', post, method: :delete, data: {confirm:'Are you sure?'}%>
+  <% end %>
+</div>
