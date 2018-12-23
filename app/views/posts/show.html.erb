@@ -6,10 +6,3 @@
 <%= link_to 'destroy', @post, method: :delete, data: {confirm:'Are you sure?'}%>
 <% end %>
 <div><%=@post.body%></div>
-<div id="comments">
-    
-    <%= render @post.comments %>
-
-    <h3>Add a comment:</h3>
-    <%= render "comments/form" %>
-  </div>
