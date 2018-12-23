@@ -1,5 +1,3 @@
- <%= link_to "Forum", posts_path %>
-
 <h1><%= @post.title %></h1>
 
 <%= link_to 'edit', edit_post_path(@post) %>
@@ -7,9 +5,5 @@
 
 <div><%=@post.body%></div>
 <div id="comments">
-  <h2><%= @post.comments.count %> Comments</h2>
-  <%= render @post.comments %>
-
-  <h3>Add a comment:</h3>
   <%= render "comments/form" %>
 </div>
